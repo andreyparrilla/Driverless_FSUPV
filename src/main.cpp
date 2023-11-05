@@ -25,12 +25,13 @@ Cone get_cone(std::vector<float> &x_cones, std::vector<float> &y_cones, std::vec
 
     //////////////// YOUR FUNCTION GOES HERE /////////////////////////
 
+    cone_out.x= x_cones[i_get];
+    cone_out.y=y_cones[i_get];
+    cone_out.colour=c_cones[i_get];
 
-
-
-
-
-
+    x_cones.erase(x_cones.begin()+i_get);
+    y_cones.erase(y_cones.begin()+i_get);
+    c_cones.erase(c_cones.begin()+i_get);
 
     //////////////////////////////////////////////////////////////////
 
